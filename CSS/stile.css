@@ -1,28 +1,137 @@
+:root {
+  --light-0: #f8f9fa;
+  --light-1: #e9ecef;
+  --light-2: #dee2e6;
+  --dark-0: #495057;
+  --dark-1: #343a40;
+  --dark-2: #212529;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 body{
-    background-image: url(./img/pxfuel.jpg);
+    background-image: url(../img/pxfuel\ \(white\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items:center;
+}
+body.dark {
+  background-image: url(../img/pxfuel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items:center;
 }
 #logo1{
     display: flex;
     width: 7vw;
     position: relative;
-    
 }    
 .calculadora{
-    display:block;
-    margin:auto;
-    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: .5rem;
+    padding:2vh 2vw;
     background-color:#0D1B41;
-    width:30vw;
-    height:70vh;
+    width:25vw;
+    height:72vh;
     border-radius: 3rem;
+    color:white;
   }
-  .calculadora td button{
-    display:block;
-    width:70px;
-    height: 70px;
-    font-size: 25px;
+  #pantalla{
+    grid-column: 1 / -1;
+    text-align: right;
+    padding: 1.5rem;
+    font-size: 2rem;
+    line-height: 100px;
+    background-color:#163077;
+    border-radius: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  .valor-superior{
+    color:white;
+    font-size: 1.2rem;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .valor-inferior {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  input {
+    position: absolute;
+    display: none;
+  }
+  label {
+    align-items: center;
+    background: var(--light-2);
+    background: url('https://i.ibb.co/TRxkxgk/Imagen-d-a.gif');
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 35px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    cursor: pointer;
+    display: flex;
+    height: 5vh;
+    position: relative;
+    width: 110px;
+  }
+  
+  #toggle-button:checked + label {
+    background: var(--dark-0);
+    background: url('https://i.ibb.co/vssyhHv/imagen-noche.gif');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  label .sun-moon {
+    background: radial-gradient(var(--green), transparent);
+    border-radius: 50%;
+    height: 30px;
+    margin: 4px;
+    transition: transform 0.3s ease;
+    width: 30px;
+  }
+  
+  #toggle-button:checked + label .sun-moon {
+    background: radial-gradient(var(--blue), transparent);
+    transform: translateX(72px);
+  }
+  
+  .sun-moon, #toggle-button{
+    grid-column: 1 / -1;
+  }
+  .btn{
+    background-color:#0D1B41;
+    color:wheat;
+    width:4rem;
+    height: auto;
+    font-size: 2rem;
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background-color:#163077;
+  }
+  #igual{
+    grid-row: span 2;
+  }
+  footer{
+    color: #fff;
   }
   #creditos{
     display:flex;
@@ -33,20 +142,4 @@ body{
     justify-content: center;
     align-items: center;
     width:300px;
-  }
-  #resultado{
-    display:block;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    width:300px;
-    height: 100px;
-    line-height: 100px;
-    background-color:#fff;
-    border-radius: 25px;
-    overflow-y: scroll;
-  }
-
-  @media screen {
-    
   }
