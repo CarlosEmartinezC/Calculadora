@@ -1,18 +1,19 @@
 body{
     background-image: url(/img/pxfuel.jpg);
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 #logo1{
     display: flex;
     width: 7vw;
     position: relative;
-}
+    
+}    
 .calculadora{
     display:block;
     margin:auto;
     padding:20px;
-    background-color:#2980b9;
+    background-color:#0D1B41;
     width:30vw;
     height:70vh;
     border-radius: 3rem;
@@ -24,10 +25,13 @@ body{
     font-size: 25px;
   }
   #creditos{
-    display:block;
+    display:flex;
     padding-top:20px;
     color:#fff;
     text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     width:300px;
   }
   #resultado{
