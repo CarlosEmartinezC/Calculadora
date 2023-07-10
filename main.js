@@ -1,3 +1,4 @@
+//declaracion de variables//
 const toggleButton = document.getElementById('toggle-button')
 const botonNumero = document.querySelectorAll('[data-numero]')
 const botonOperador = document.querySelectorAll('[data-operador]')
@@ -57,7 +58,7 @@ class Calculadora {
             case '*':
             resultado = conversionValorSuperior * conversionValorInferior
             break
-            case '÷':
+            case '/':
             resultado = conversionValorSuperior / conversionValorInferior
             break
             default: return
