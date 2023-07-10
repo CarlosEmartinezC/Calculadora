@@ -250,6 +250,6 @@ body.dark {
       width: 8vw;
       height: auto;
       font-size: 0.8rem;
-      border-radius: 0.9rem;
+      border-radius: 40%;
     }
   }
