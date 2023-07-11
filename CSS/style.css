@@ -139,6 +139,10 @@ body.dark {
       display: flex;
       flex-direction: column;
       padding: 20px 20px;
+      background-image:url(../img/pxceldark.jpg);;
+  }
+  body.dark {
+    background-image: url(../img/pxcel\ \(white\).jpg);
   }
     .calculadora{
       display:grid;
@@ -177,9 +181,9 @@ body.dark {
     }
     label {
       border-radius: 35px;
-      height: 4vh;
+      height: 6vh;
       top:2vh;
-      width: 25vw;
+      width: 20vw;
     }
     
     
@@ -212,12 +216,13 @@ body.dark {
     .calculadora{
       gap: .2rem;
       width:40vw;
-      height:82vh;
+      height:72vh;
       border-radius: 2rem;
+      background-image: url(../img/pxtablet.jpg);
     }
     #pantalla{
       padding: 1.5rem;
-      font-size: 0.8rem;
+      font-size: 1.3rem;
       line-height: 80px;
       border-radius: 1.5rem;
       font-weight: 500;
@@ -231,9 +236,9 @@ body.dark {
     }
     label {
       border-radius: 35px;
-      height: 7vh;
-      top:0vh;
-      width: 10vw;
+      height: 6vh;
+      top:2vh;
+      width: 13vw;
     }
     
     label .sun-moon {
@@ -249,7 +254,7 @@ body.dark {
     .btn{
       width: 8vw;
       height: auto;
-      font-size: 0.8rem;
+      font-size: 1.5rem;
       border-radius: 40%;
     }
   }
